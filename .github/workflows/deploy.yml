@@ -10,7 +10,8 @@ jobs:
       - name: Checkout  ️
         uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      - name: setup node
+        uses: actions/setup-node@v3
         with:
           node-version: 16
 
@@ -24,4 +25,3 @@ jobs:
         with:
           BRANCH: gh-pages
           FOLDER: docs/.vuepress/dist
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
