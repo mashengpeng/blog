@@ -12,5 +12,10 @@
   "devDependencies": {
     "vuepress": "^1.9.9",
     "vuepress-theme-reco": "^1.6.17"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "moment": "^2.29.4",
+    "npm": "^9.6.7"
   }
 }
