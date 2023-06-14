@@ -1,4 +1,4 @@
-# 在VUE中使用Tailwind CSS
+# 在vue中使用tailwind
 
 在vue的根目录下，安装 Tailwind 及其依赖项（PostCSS &
 auto-prefixer）。有可能安装的时候回提示错误导致安装不成功，一般都是缺少其他依赖或版本问题，根据提示说明解决就好，正常都是一次性通过。
