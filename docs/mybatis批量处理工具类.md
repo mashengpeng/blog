@@ -4,47 +4,35 @@
 
 
 @Slf4j
+@Component
 public class BatchUtil implements ApplicationContextAware {
 
-	private static ApplicationContext applicationContext;
+    private static ApplicationContext applicationContext;
 
+    public static <M, T> void batchExecutor(List<T> list, Class<M> clazz, BiConsumer<M, T> biConsumer) {
+        if (list == null || list.size() == 0) {
+            log.info("BatchInsertUtil batchInsert list data is null!");
+            return;
+        }
+        SqlSessionFactory sqlSessionFactory = applicationContext.getBean(SqlSessionFactory.class);
+        SqlSession session = sqlSessionFactory.openSession(ExecutorType.BATCH);
+        try {
+            M mapper = session.getMapper(clazz);
+            list.forEach(a -> biConsumer.accept(mapper, a));
+            session.commit(!TransactionSynchronizationManager.isSynchronizationActive());
+        } catch (Exception e) {
+            e.printStackTrace();
+            log.error("BatchInsertUtil batchInsert is exception！clazz={}", clazz.getName(), e);
+            session.rollback();
+        } finally {
+            session.close();
+        }
+    }
 
-	/**
-	 * 批量新增方法
-	 *
-	 * @param list       要新增的集合
-	 * @param clazz      Mapper类
-	 * @param biConsumer 对应的单条新增方法
-	 * @param <M>        mapper类型
-	 * @param <T>        结合元素类型
-	 */
-
-	public static <M, T> void batchExecutor(List<T> list, Class<M> clazz, BiConsumer<M, T> biConsumer) {
-		if (list == null || list.size() == 0) {
-			log.info("BatchInsertUtil batchInsert list data is null!");
-			return;
-		}
-		SqlSessionFactory sqlSessionFactory = applicationContext.getBean(SqlSessionFactory.class);
-		SqlSession session = sqlSessionFactory.openSession(ExecutorType.BATCH);
-		try {
-			M mapper = session.getMapper(clazz);
-			list.forEach(a -> {
-				biConsumer.accept(mapper, a);
-			});
-			session.commit(!TransactionSynchronizationManager.isSynchronizationActive());
-		} catch (Exception e) {
-			e.printStackTrace();
-			log.error("BatchInsertUtil batchInsert is exception！clazz={}", clazz.getName(), e);
-			session.rollback();
-		} finally {
-			session.close();
-		}
-	}
-
-	@Override
-	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-		BatchUtil.applicationContext = applicationContext;
-	}
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        BatchUtil.applicationContext = applicationContext;
+    }
 }
 
 ```
