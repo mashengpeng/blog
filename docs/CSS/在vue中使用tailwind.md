@@ -7,7 +7,7 @@ auto-prefixer）。有可能安装的时候回提示错误导致安装不成功�
 npm install -D tailwindcss postcss autoprefixer
 ```
 
-生成Tailwind CSS配置文件
+生成tailwind css配置文件
 
 ```bash
 npx tailwindcss init -p
