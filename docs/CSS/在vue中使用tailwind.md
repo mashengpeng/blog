@@ -39,7 +39,7 @@ module.exports = {
 @tailwind utilities;
 ```
 
-导入css/tailwindcss.css到main.js，这样就让你的项目拥有了Tailwind CSS
+导入css/tailwindcss.css到main.js，这样就让你的项目拥有了tailwind css
 
 ```js
 import {createApp} from 'vue'
