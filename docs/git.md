@@ -1,4 +1,4 @@
-# git基础
+# git
 
 ## 配置git pull的方式
 
