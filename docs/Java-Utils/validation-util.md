@@ -1,42 +1,4 @@
-# 工具类
-
-```java
-public class StreamUtil {
-    public static <V, R> List<R> transform(List<V> list, Function<? super V, ? extends R> valueMapper) {
-        return list.stream().filter(d -> d != null).map(valueMapper).collect(Collectors.toList());
-    }
-
-    public static <V, R> Set<R> transformToSet(List<V> list, Function<? super V, ? extends R> valueMapper) {
-        return list.stream().filter(d -> d != null).map(valueMapper).collect(Collectors.toSet());
-    }
-
-    public static <K, V> Map<K, V> toMap(List<V> list, Function<? super V, ? extends K> keyMapper) {
-        return list.stream().filter(d -> d != null).collect(Collectors.toMap(keyMapper, d -> d, (d1, d2) -> d1));
-    }
-
-    public static <K, V, R> Map<K, R> toMap(List<V> list, Function<? super V, ? extends K> keyMapper, Function<? super V, ? extends R> valueMapper) {
-        return list.stream().filter(d -> d != null).collect(Collectors.toMap(keyMapper, valueMapper, (d1, d2) -> d1));
-    }
-
-    public static <K, V> Map<K, List<V>> group(List<V> list, Function<? super V, ? extends K> keyMapper) {
-        return list.stream().filter(d -> d != null).collect(Collectors.groupingBy(keyMapper));
-    }
-
-    public static <K, V, R> Map<K, List<R>> group(List<V> list, Function<? super V, ? extends K> keyMapper, Function<? super V, ? extends R> valueMapper) {
-        return list.stream().filter(d -> d != null).collect(Collectors.groupingBy(keyMapper, Collectors.mapping(valueMapper, Collectors.toList())));
-    }
-
-    public static <K, V, R> Map<K, Set<R>> groupToSet(List<V> list, Function<? super V, ? extends K> keyMapper, Function<? super V, ? extends R> valueMapper) {
-        return list.stream().filter(d -> d != null).collect(Collectors.groupingBy(keyMapper, Collectors.mapping(valueMapper, Collectors.toSet())));
-    }
-
-    public static <T> Predicate<T> isDuplicate(Function<? super T, Object> keyExtractor) {
-        Map<Object, Boolean> map = new ConcurrentHashMap<>();
-        return t -> map.putIfAbsent(keyExtractor.apply(t), Boolean.TRUE) != null;
-    }
-}
-
-```
+# ValidationHelper
 
 ```java
 @Slf4j
@@ -188,73 +150,6 @@ public class ValidationHelper {
     public static void errorMessage(ConstraintValidatorContext context, String message) {
         context.disableDefaultConstraintViolation();
         context.buildConstraintViolationWithTemplate(message).addConstraintViolation();
-    }
-}
-
-```
-
-```java
-@Data
-@AllArgsConstructor
-@AtomicTypeProperty
-public class MatrixAdminBizResult<T> {
-    /**
-     * 错误码
-     */
-    private String resultCode;
-    /**
-     * 错误描述
-     */
-    private String resultDesc;
-    /**
-     * 数据
-     */
-    private T resultData;
-    /**
-     * 是否可重试
-     */
-    private Boolean canRetry;
-    /**
-     * tx id，使用skywalking trace id
-     */
-    private String txId;
-
-
-    /**
-     * 是否成功
-     *
-     * @return 是否成功
-     */
-    public boolean isSuccess() {
-        return BizErrorCode.SUCCESS.getCode().equals(resultCode);
-    }
-
-    public static <T> MatrixAdminBizResult<T> successResult() {
-        return successResult(null);
-    }
-
-    public static <T> MatrixAdminBizResult<T> successResult(T data) {
-        BizErrorCode resultType = BizErrorCode.SUCCESS;
-        return new MatrixAdminBizResult<>(resultType.getCode(), resultType.getDesc(), data, resultType.getCanRetry(), TraceContext.traceId());
-    }
-
-    public static <T> MatrixAdminBizResult<T> failResult() {
-        return failResult(BizErrorCode.SYSTEM_ERROR);
-    }
-
-    public static <T> MatrixAdminBizResult<T> failResult(BizErrorCode resultType) {
-        return failResult(resultType, null);
-    }
-
-    public static <T> MatrixAdminBizResult<T> failResult(BizErrorCode resultType, String errorMsg) {
-        if (StringUtils.isBlank(errorMsg)) {
-            errorMsg = resultType.getDesc();
-        }
-        return new MatrixAdminBizResult<>(resultType.getCode(), errorMsg, null, resultType.getCanRetry(), TraceContext.traceId());
-    }
-
-    public static <T> MatrixAdminBizResult<T> failResult(BizErrorCode resultType, T errorObject) {
-        return new MatrixAdminBizResult<>(resultType.getCode(), resultType.getDesc(), errorObject, resultType.getCanRetry(), TraceContext.traceId());
     }
 }
 
