@@ -108,3 +108,11 @@ $ git log --left-right master...experiment
 > C
 ```
 
+## squash commit
+
+```bash
+git log @{U}..
+# 查看当前分支相对远程有n个commit
+git rebase -i HEAD~n
+# commit从旧的开始显示,与git log相反.选取某一个commit为squash时,上方必须有pick的commit
+```
