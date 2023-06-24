@@ -116,3 +116,20 @@ git log @{U}..
 git rebase -i HEAD~n
 # commit从旧的开始显示,与git log相反.选取某一个commit为squash时,上方必须有pick的commit
 ```
+
+## push新分支
+
+假如新创建了一个分支feature,默认远程仓库名称是origin,push前需要设置关联远程分支:
+
+```bash
+git push --set-upstream origin feature
+```
+
+如果希望这一步省略,自动执行,可以进行git配置:
+
+```bash
+git config --global --add --bool push.autoSetupRemote true
+```
+
+
+

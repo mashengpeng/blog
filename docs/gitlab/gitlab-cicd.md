@@ -10,6 +10,7 @@
 | stages        | 列出所有的stage列表并按顺序执行,默认情况下有build,test,deploy三个stage                                                  |
 | allow_failure | 允许job失败,不影响pipeline执行                                                                              |
 | dependencies  | 指定只从列出的job中获取artifacts                                                                             |                                                                                
+| rules         | 指定job在在哪个pipeline执行,多个rule从上到下判断,有一个满足就添加到pipeline                                                 |
 
 ## Case 1
 
