@@ -131,5 +131,17 @@ git push --set-upstream origin feature
 git config --global --add --bool push.autoSetupRemote true
 ```
 
+## 删除分支
 
+删除本地分支
+
+```bash
+git branch -d localBranchName
+```
+
+删除远程分支
+
+```bash
+git push origin --delete remoteBranchName
+```
 
