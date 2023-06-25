@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>nginx | MSP 知识库</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="icon.png">
+    <meta name="description" content="MSP 知识库">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.60747521.css" as="style"><link rel="preload" href="/blog/assets/js/app.1f3b255b.js" as="script"><link rel="preload" href="/blog/assets/js/3.74002841.js" as="script"><link rel="preload" href="/blog/assets/js/1.74259b1a.js" as="script"><link rel="preload" href="/blog/assets/js/19.c7db822c.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.6bc5728f.js"><link rel="prefetch" href="/blog/assets/js/11.e0a99434.js"><link rel="prefetch" href="/blog/assets/js/12.2a60bf1f.js"><link rel="prefetch" href="/blog/assets/js/13.828507dc.js"><link rel="prefetch" href="/blog/assets/js/14.0e5c6c29.js"><link rel="prefetch" href="/blog/assets/js/15.3f9ecc00.js"><link rel="prefetch" href="/blog/assets/js/16.8563351d.js"><link rel="prefetch" href="/blog/assets/js/17.8242f3c7.js"><link rel="prefetch" href="/blog/assets/js/18.775cf981.js"><link rel="prefetch" href="/blog/assets/js/20.71a26102.js"><link rel="prefetch" href="/blog/assets/js/21.748153f0.js"><link rel="prefetch" href="/blog/assets/js/4.6ae35edf.js"><link rel="prefetch" href="/blog/assets/js/5.c6aaf4cd.js"><link rel="prefetch" href="/blog/assets/js/6.99c02c3a.js"><link rel="prefetch" href="/blog/assets/js/7.365be1ce.js"><link rel="prefetch" href="/blog/assets/js/8.e370a744.js"><link rel="prefetch" href="/blog/assets/js/9.f4bad21a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.60747521.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>MSP 知识库</h3> <p class="description" data-v-59e6cb88>MSP 知识库</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">MSP 知识库</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      MSP
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/mashengpeng" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <a href="https://gitlab.com/mashengpeng/blog" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-查看源码"></i>
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <!----> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>12</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>0</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      MSP
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/mashengpeng" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <a href="https://gitlab.com/mashengpeng/blog" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-查看源码"></i>
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <ul class="sidebar-links"><li><a href="/blog/" aria-current="page" class="sidebar-link">欢迎来到我的个人知识库！</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java Utils</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/blog/git.html" class="sidebar-link">git</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Gitlab</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/blog/linux.html" class="sidebar-link">linux</a></li><li><a href="/blog/nginx.html" aria-current="page" class="active sidebar-link">nginx</a></li><li><a href="/blog/在vue中使用tailwind.html" class="sidebar-link">在vue中使用tailwind</a></li><li><a href="/blog/多远程仓库同步.html" class="sidebar-link">多远程仓库同步</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">nginx</h1> <div data-v-8a445198><!----> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="nginx"><a href="#nginx" class="header-anchor">#</a> nginx</h1> <h2 id="what-is-nginx"><a href="#what-is-nginx" class="header-anchor">#</a> What is Nginx?</h2> <p>Nginx（发音同“engine x”）是一个高性能的反向代理和 Web 服务器软件，因其系统资源消耗低、运行稳定且具有高性能的并发处理能力等特性，Nginx
+在互联网企业中得到广泛应用。</p> <h2 id="nginx特点"><a href="#nginx特点" class="header-anchor">#</a> Nginx特点</h2> <ul><li><p>高性能、高并发</p></li> <li><p>扩展性好</p></li> <li><p>异步非阻塞的事件驱动模型</p> <p>| Nginx                | Apache               |
+| :------------------- | :------------------- |
+| 一个进程处理多个请求 | 一个进程处理一个请求 |
+| 非阻塞式             | 阻塞式               |</p></li></ul> <h1 id="安装-使用"><a href="#安装-使用" class="header-anchor">#</a> 安装&amp;使用</h1> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <h3 id="windows安装"><a href="#windows安装" class="header-anchor">#</a> windows安装</h3> <ul><li>下载官方稳定版：<code>https://nginx.org/download/nginx-1.20.0.zip</code></li> <li>解压到本地，直接运行<code>nginx.exe</code>即可</li></ul> <h3 id="linux安装"><a href="#linux安装" class="header-anchor">#</a> Linux安装</h3> <ul><li>rpm包安装</li></ul> <blockquote><p>❝</p> <p>rpm包下载页：</p> <p>http://nginx.org/packages/rhel/7/x86_64/RPMS/</p> <p>❞</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ rpm -ivh nginx-*.rpm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>关闭防火墙</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ firewall-cmd --zone=public --add-port=80/tcp --permanent
+$ firewall-cmd --reload
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>rpm包中已包含了大量常用模块，推荐使用rpm包方式安装，简单快速</p> <h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <table><thead><tr><th style="text-align:center;">命令参数</th> <th style="text-align:left;">含义</th></tr></thead> <tbody><tr><td style="text-align:center;">nginx</td> <td style="text-align:left;">启动</td></tr> <tr><td style="text-align:center;">nginx -V</td> <td style="text-align:left;">查看当前版本及编译配置信息</td></tr> <tr><td style="text-align:center;">nginx -t</td> <td style="text-align:left;">检查配置文件语法是否正确</td></tr> <tr><td style="text-align:center;">nginx -s stop</td> <td style="text-align:left;">直接关闭worker子进程</td></tr> <tr><td style="text-align:center;">nginx -s quit</td> <td style="text-align:left;">等待worker子进程正确处理完请求后关闭</td></tr> <tr><td style="text-align:center;">nginx -s reload</td> <td style="text-align:left;">重读配置文件</td></tr></tbody></table> <h1 id="实用场景"><a href="#实用场景" class="header-anchor">#</a> 实用场景</h1> <h2 id="虚拟主机"><a href="#虚拟主机" class="header-anchor">#</a> 虚拟主机</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>server {
+    # 1: 基于多ip的虚拟主机：listen监听不同网卡的ip，端口可相同
+    listen 8000;
+    server_name 172.17.1.1;
+    
+    listen 8000;
+    server_name 172.17.1.2;
+    
+    # 2: 基于多端口的虚拟主机：listen监听不同端口
+    listen 8001;
+    server_name localhost;
+    
+    listen 8002;
+    server_name localhost;
+    
+    #3: 基于域名的虚拟主机：端口可相同，server_name为不同域名
+    listen 8003;
+    server_name www.test1.com;
+    
+    listen 8003;
+    server_name www.test2.com;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h2 id="静态站点"><a href="#静态站点" class="header-anchor">#</a> 静态站点</h2> <p>为了加快网站解析速度，可以将动态资源交给后端服务器，纯前端的静态页面放在系统目录下，交给Nginx来解析。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>server {
+    listen 80;
+    server_name localhost;
+    
+    location / {
+          root   /opt/nginx/html;
+          index  index.html index.htm;
+      }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="反向代理"><a href="#反向代理" class="header-anchor">#</a> 反向代理</h2> <p>反向代理是用户客户端访问代理服务器后，被反向代理服务器按照一定的规则从一个或多个被代理服务器中获取响应资源并返回给客户端的代理模式，客户端只知道代理服务器的
+IP，并不知道后端服务器的 IP，原因是代理服务器隐藏了被代理服务器的信息。</p> <h3 id="七层反向代理"><a href="#七层反向代理" class="header-anchor">#</a> 七层反向代理</h3> <p>在配置文件nginx.conf中的http段中，写入如下格式的配置，即可将本地8088端口代理到百度：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>server {
+    listen       8088;
+    server_name  localhost;
+    
+    location / {
+        proxy_pass   https://www.baidu.com;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="四层反向代理"><a href="#四层反向代理" class="header-anchor">#</a> 四层反向代理</h3> <p>Nginx除了可以代理HTTP七层流量，还可以代理 TCP/UDP 四层流量，核心模块 stream 需要在编译配置时增加“--with-stream”参数进行编译（rpm包已包含）。</p> <p>配置文件如下（需写在main段中）：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>stream {
+    server {
+        listen 3306;
+        # 访问本机的3306，就被转发到了远程的3306
+        proxy_pass 172.17.0.1:3306;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="负载均衡"><a href="#负载均衡" class="header-anchor">#</a> 负载均衡</h2> <p>当出现高并发大流量的业务场景时，单台后端服务器已无法支撑业务正常运行，需要将请求流量按照一定规则分发到多台服务节点上，即使某个节点宕机，系统依然能够对外正常提供服务，以此来提高系统的性能和稳定性。</p> <h3 id="upstream模块"><a href="#upstream模块" class="header-anchor">#</a> upstream模块</h3> <ul><li>定义上游服务器</li></ul> <table><thead><tr><th style="text-align:left;">指令</th> <th style="text-align:left;">含义</th></tr></thead> <tbody><tr><td style="text-align:left;">upstream</td> <td style="text-align:left;">段名，中间定义上游服务url</td></tr> <tr><td style="text-align:left;">server</td> <td style="text-align:left;">定义上游服务地址</td></tr> <tr><td style="text-align:left;">zone</td> <td style="text-align:left;">定义共享内存，用于跨worker子进程共享数据</td></tr> <tr><td style="text-align:left;">keepalive</td> <td style="text-align:left;">对上游服务启用长连接，每个worker子进程与上游服务器***空闲长连接***的最大数量（keepalive 16；当同时有5000个请求过来，处理完毕后，会保留16个连接，其他全部关闭）</td></tr> <tr><td style="text-align:left;">keepalive_requests</td> <td style="text-align:left;">一个长连接可以处理的最多请求个数</td></tr> <tr><td style="text-align:left;">keepalive_timeout</td> <td style="text-align:left;">空闲情况下，一个长连接的超时时长，超过后会销毁长连接</td></tr> <tr><td style="text-align:left;">hash</td> <td style="text-align:left;">负载均衡算法：哈希</td></tr> <tr><td style="text-align:left;">ip_hash</td> <td style="text-align:left;">负载均衡算法：依据ip进行哈希计算</td></tr> <tr><td style="text-align:left;">least_conn</td> <td style="text-align:left;">负载均衡算法：最少连接数</td></tr> <tr><td style="text-align:left;">least_time</td> <td style="text-align:left;">负载均衡算法：最短响应时间</td></tr> <tr><td style="text-align:left;">random</td> <td style="text-align:left;">负载均衡算法：随机</td></tr></tbody></table> <h4 id="server可选参数"><a href="#server可选参数" class="header-anchor">#</a> server可选参数</h4> <table><thead><tr><th style="text-align:left;">参数</th> <th style="text-align:left;">含义</th></tr></thead> <tbody><tr><td style="text-align:left;">weight=number</td> <td style="text-align:left;">权重值，默认为1</td></tr> <tr><td style="text-align:left;">max_conns=number</td> <td style="text-align:left;">上游服务器的最大并发连接数</td></tr> <tr><td style="text-align:left;">fail_timeout=time</td> <td style="text-align:left;">服务器不可用的判定时间（10s内不可用次数达3次，则在这10s内不会再转发给后端，超过10后依然还是会转发过去）</td></tr> <tr><td style="text-align:left;">max_fails=number</td> <td style="text-align:left;">服务器不可用的检查次数</td></tr> <tr><td style="text-align:left;">backup</td> <td style="text-align:left;">备份服务器，仅当其他服务器都不可用时</td></tr> <tr><td style="text-align:left;">down</td> <td style="text-align:left;">标记服务器长期不可用，离线维护</td></tr></tbody></table> <h3 id="负载均衡算法"><a href="#负载均衡算法" class="header-anchor">#</a> 负载均衡算法</h3> <ul><li><p>轮询（默认）</p></li> <li><ul><li>每个请求按时间顺序逐一分配到不同的后端服务器</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>upstream backend {
+    # 默认所有服务器权重为 1
+    server 192.168.1.1:8080;
+    server 192.168.1.2:8080;
+    server 192.168.1.3:8080;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li><p>weight-权重轮询</p></li> <li><ul><li>指定轮询概率，用于后端服务器性能不均的情况</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>upstream backend {
+    server 192.168.1.1:8080 weight=3;
+    server 192.168.1.2:8080 weight=2;
+    # default weight=1
+    server 192.168.1.3:8080;  
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li><p>哈希-hash</p></li> <li><ul><li>哈希算法是将任意长度的二进制值映射为较短的固定长度的二进制值，这个小的二进制值叫哈希值，映射不可逆。</li> <li>hash $request_uri：根据这个变量的哈希值来负载</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>upstream backend {
+    hash $request_uri;
+    server 192.168.1.1:8080;
+    server 192.168.1.2:8080;
+    server 192.168.1.3:8080; 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li><p>ip_hash</p></li> <li><ul><li>每个请求按访问ip的hash结果分配，这样每个访客固定访问一个后端服务器，是session共享问题的解决方案之一</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>upstream backend {
+    ip_hash;
+    server 192.168.1.1:8080;
+    server 192.168.1.2:8080;
+    server 192.168.1.3:8080; 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li><p>最少连接数算法</p></li> <li><ul><li>多个worker子进程同时处理请求时，无法共享后端服务器的连接数状态，此时需要开辟共享内存空间，用来在多个worker子进程中共享信息</li> <li>zone zone_name 1M，开辟共享内存</li></ul></li> <li><ul><li>从上游服务器挑选一台当前已建立连接数最少的分配请求</li> <li>极端情况下会退化为轮询算法</li> <li>least_conn：</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>upstream backend {
+    least_conn;
+    server 192.168.1.1:8080;
+    server 192.168.1.2:8080;
+    server 192.168.1.3:8080; 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="「对上游服务器返回异常时的处理」"><a href="#「对上游服务器返回异常时的处理」" class="header-anchor">#</a> <strong>「对上游服务器返回异常时的处理」</strong></h3> <blockquote><p>❝</p> <p><strong>「遇到这些情况下执行失败转发」</strong></p> <p>语法：  <strong>「proxy_next_upstream error」</strong> | timeout | invalid_header | http_500 | http_502 | http_503 | http_504 |
+http_403 | http_404 | http_429 | non_idempotent| off</p> <p>默认值：proxy_next_upstream error timeout</p> <p>上下文：http, server, location</p> <hr> <p><strong>「超时时间，超过这个时间就不再尝试失败转发」</strong></p> <p>语法：  <strong>「proxy_next_upstream_timeout」</strong> time</p> <p>默认值：proxy_next_upstream_timeout 0 (不等待)</p> <p>上下文：http, server, location</p> <hr> <p><strong>「转发次数」</strong></p> <p>语法：  <strong>「proxy_next_upstream_tries」</strong> number</p> <p>默认值：proxy_next_upstream_tries 0 (一直转发)</p> <p>上下文：http, server, location</p> <p>❞</p></blockquote> <table><thead><tr><th style="text-align:left;">可选参数</th> <th style="text-align:left;">含义</th></tr></thead> <tbody><tr><td style="text-align:left;">error</td> <td style="text-align:left;">向后端服务器传输请求，或读取响应头**「出错」**时（服务器宕机会转发到下一台）</td></tr> <tr><td style="text-align:left;">timeout</td> <td style="text-align:left;">向后端服务器传输请求，或读取响应头**「超时」**时（proxy_read_timeout设置的时间内没有接收完响应体，则会转发到下一台服务器；但是服务器宕机的话会返回502，不会转发下一台）</td></tr> <tr><td style="text-align:left;">invalid_header</td> <td style="text-align:left;">后端返回无效的响应时</td></tr> <tr><td style="text-align:left;">http_500、502、503、504、403、404、429</td> <td style="text-align:left;">http响应状态为xxx时</td></tr> <tr><td style="text-align:left;">non_idempotent</td> <td style="text-align:left;">非幂等请求失败时，是否需要转发下一台后端服务器（不设置就是不转发，如post请求时，如果命中404，则会直接返回404。对于写操作最好不要轻易设置）</td></tr> <tr><td style="text-align:left;">off</td> <td style="text-align:left;">禁用请求失败转发功能</td></tr></tbody></table> <h3 id="配置样例"><a href="#配置样例" class="header-anchor">#</a> 配置样例</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>upstream backend {
+    zone upstream_backend 64k;
+    
+    server 127.0.0.1:8080 weight=2 max_conns=1000 fail_timeout=10s max_fails=5;
+    server test.nginx.com weight=1;
+    
+    keepalive 16;
+    keepalive_requests 100;
+    keepalive_timeout 30s;
+}
+
+server {
+    location /test {
+        proxy_pass http://backend/test;
+        # 如果不配置proxy_next_upstream，当遇到上游返回http错误状态码时，nginx会直接返回给客户端
+        proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504 http_403 http_404 http_429; 
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="https加密传输"><a href="#https加密传输" class="header-anchor">#</a> HTTPS加密传输</h2> <p>HTTPS 通过加密通道保护客户端与服务端之间的数据传输，已成为当前网站部署的必选配置。在部署有 Nginx 代理集群的 HTTPS 站点，通常会把
+SSL 证书部署在 Nginx 的服务器上，然后把请求代理到后端的上游服务器。这种部署方式由 Nginx 服务器负责 SSL 请求的运算，相对减轻了后端上游服务器的
+CPU 运算量。</p> <ul><li>生成自签名HTTPS证书</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>  # 配置https签名证书
+  # 1、创建https证书存放目录：
+  cd /usr/local/nginx/conf/
+  mkdir ssl
+  # 2、创建私钥：
+  openssl genrsa -des3 -out https.key 1024
+  # 3、创建签名请求证书：
+  openssl req -new -key https.key -out https.csr
+  # 4、在加载SSL支持的Nginx并使用上述私钥时除去必须的口令：
+  cp https.key https.key.org
+  openssl rsa -in https.key.org -out https.key
+  # 5、最后标记证书使用上述私钥和CSR和有效期：
+  openssl x509 -req -days 365 -in https.csr -signkey https.key -out https.crt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>server配置</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>server {
+    listen       443 ssl;
+    server_name  localhost;
+
+    # 证书部分
+    ssl_certificate     /usr/local/nginx/conf/ssl/https.crt; #RSA证书
+    ssl_certificate_key  /usr/local/nginx/conf/ssl/https.key; #RSA密钥
+    
+    # TLS 握手优化
+    # 会话缓存的存储大小为1MB
+    ssl_session_cache    shared:SSL:1m;
+    # 会话缓存的超时时间为5分钟
+    ssl_session_timeout  5m;
+    keepalive_timeout    75s;
+    keepalive_requests   100;
+    location / {
+        root   html;
+        index  index.html index.htm;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="文件服务器"><a href="#文件服务器" class="header-anchor">#</a> 文件服务器</h2> <p>要归档一些数据或资料，那么文件服务器必不可少。使用 Nginx 可以非常快速便捷的搭建一个简易的文件服务。</p> <ul><li>配置</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>server {
+    listen 8004;
+    server_name localhost;
+    
+    # 正常显示中文，windows服务器下中文目录无法下钻，目前无解
+    charset gbk,utf-8;
+
+    # 打开autoindex功能，以/结尾的请求
+    autoindex on;
+    
+    # 显示文件的大小，
+    # on：以字节显示
+    # off：人性化显示，文件过大会显示为mb或gb
+    autoindex_exact_size off;
+    
+    # 以哪种格式返回：html | xml | json | jsonp
+    # 默认值：autoindex_format html
+    autoindex_format html;
+    
+    # 显示时间格式
+    # on: 12-Jul-2019 10:11（当前时区）
+    # off: 12-Jul-2019 02:11(0时区，GMT)
+    autoindex_localtime on;
+
+    location / {
+        root /data/files/;
+        # 如果a.html文件存在，则会返回a.html内容，否则才会返回目录内容
+        index a.html;
+    } 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h2 id="限速"><a href="#限速" class="header-anchor">#</a> 限速</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>location /rate {
+ # 定义响应数据的传输速度，默认bytes/s
+    limit_rate 20;
+
+    # 这些是Nginx处理请求时相关变量，加大返回数据量更好地看到限速效果
+ return 200 'request_time  $request_time
+request_id   $request_id
+server_name   $server_name
+request_filename $request_filename
+document_root  $document_root
+realpath_root  $realpath_root
+request_completion $request_completion
+';
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="限流"><a href="#限流" class="header-anchor">#</a> 限流</h2> <h3 id="limit-conn"><a href="#limit-conn" class="header-anchor">#</a> limit_conn</h3> <ul><li>用于限制客户端并发连接数</li> <li>使用共享内存，对所有的worker子进程生效（需要保存客户端连接数）</li></ul> <h3 id="limit-req"><a href="#limit-req" class="header-anchor">#</a> limit_req</h3> <ul><li><p>用于限制客户端处理请求的**「平均速率」**</p></li> <li><p>使用共享内存，对所有的worker子进程生效</p></li> <li><p>限流算法：<strong>「leaky_bucket」</strong>（漏桶）</p></li> <li><ul><li>暂时拦截住上方水的向下流动，等待桶中的一部分水漏走后，再放行上方水。</li> <li>溢出的上方水直接抛弃。</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>http {
+    include       mime.types;
+    default_type  application/json;
+    
+    # limit_conn_zone key zone=name:size
+    # key：用于定义客户端的唯一标识来限速，如remote_addr
+    # name：任意名称
+    # size：共享内存大小空间，m为单位
+    # binary_remote_addr 使用4个字节空间，高效;remote_addr 使用7-15个字节空间
+    limit_conn_zone $binary_remote_addr zone=limit_addr:10m;
+    
+    # limit_req_zone key zone=name:size rate=rate;
+    # 上下文：http
+    # rate:表示允许相同标识的客户端的访问频次，12r/m的，即限制每5秒访问一次，每5秒才处理一个请求。
+    limit_req_zone  $binary_remote_addr zone=limit_req:15m rate=12r/m;
+
+    server {
+        listen       80;
+        server_name  localhost;
+
+        location / {
+           root   html;
+           index  index.html index.htm;
+            
+            # 触发限速后，返回状态码,默认503
+            # 上下文：http, server, location
+            limit_conn_status 503;
+            
+            # 当触发限速后，错误日志出记录一条日志， 这里用于定义日志等级
+            # info|notice|warn|error
+            # 上下文：http, server, location
+            # 默认值：error
+            limit_conn_log_level warn;
+            
+            # limit_conn zone number;
+            # zone：用limit_conn_zone中定义的zone名称
+            # number：以zone为标识的客户端被允许的同时最大连接数
+            limit_conn limit_addr 2;
+            
+            # 定义响应数据的传输速度，bytes/s
+            # 本指令属于ngx_http_core_module，不属于ngx_http_limit_conn_module
+            limit_rate 50;
+
+            # limit_req_status code（http的状态码） 
+            # 默认值：503
+            # 上下文：http, server, location
+            limit_req_status 504;
+            
+            # 触发限速后，日志记录的等级 
+            # info|notice|warn|error
+            # 默认值：error
+            # 上下文：http, server, location
+            limit_req_log_level notice;
+            
+            # limit_req zone=name [burst=number] [nodelay | delay=number];
+            # burst：桶大小,设置一个大小为x的缓冲区,当有大量请求（爆发）过来时，超过了访问频次限制的请求可以先放到这个缓冲区内等待，但是这个等待区里的位置只有5个，超过的请求会直接报503的错误然后返回。
+            # nodelay：如果设置，会在瞬时提供处理(burst + rate)个请求的能力，请求超过（burst + rate）的时候就会直接返回503，永远不存在请求需要等待的情况。
+            # 上下文：http, server, location
+            # limit_req zone=limit_req burst=7 nodelay;
+            limit_req zone=limit_req;
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br></div></div><h2 id="黑白名单"><a href="#黑白名单" class="header-anchor">#</a> 黑白名单</h2> <h3 id="access"><a href="#access" class="header-anchor">#</a> access</h3> <ul><li>限制特定IP或网段访问</li> <li>allow</li> <li>deny</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>server {
+    listen       80;
+    server_name  localhost;
+    location / {
+        # allow address | CIDR | UNIX | all
+        # 默认值
+        # 上下文：http, server, location, limit_except
+        allow 192.168.0.1/24;
+        
+        # deny address | CIDR | UNIX | all
+        # 默认值
+        # 上下文：http, server, location, limit_except
+        deny all;  
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="规则示例"><a href="#规则示例" class="header-anchor">#</a> 规则示例</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>location / {
+    # 规则从上到下
+    
+    # 拒绝
+    deny   192.168.1.1;
+    
+    # 放行192.168.1.0网段，子网掩码24位（255.255.255.0），但是除了192.168.1.1
+    allow  192.168.1.0/24;
+    
+    # 放行10.1.1.0网段，子网掩码16位（255.255.0.0）
+    allow  10.1.1.0/16;
+    
+    # 放行ipv6
+    allow  2001:0db8::/32;
+    
+    # 除了上面放行的，其他全部拒绝
+    deny   all;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="请求拦截"><a href="#请求拦截" class="header-anchor">#</a> 请求拦截</h2> <h3 id="auth-request"><a href="#auth-request" class="header-anchor">#</a> auth_request</h3> <ul><li><p>基于子请求收到的HTTP响应码做访问控制</p></li> <li><ul><li>如：拦截所有请求，先去做鉴权请求，通过后再放行</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>location /private {
+    # 默认值：off
+    # 上下文：http, server, location;
+    # 鉴权成功对会返回后面实际内容，鉴权失败会返回鉴权服务的返回内容
+    auth_request /auth;
+    ...
+}
+location /auth {
+    proxy_pass http://localhost:8080/auth;
+    proxy_pass_request_body off;
+    proxy_set_header Content-Length &quot;&quot;;
+    proxy_set_header X-Original-URI $request_uri;
+    
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h1 id="配置-变量详解"><a href="#配置-变量详解" class="header-anchor">#</a> 配置&amp;变量详解</h1> <h2 id="全局配置main段"><a href="#全局配置main段" class="header-anchor">#</a> 全局配置main段</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>核心参数（其他参数大部分情况下用不到）
+
+# user USERNAME [GROUP]
+# 解释：指定运行nginx的worker子进程的属主和属组，其中属组可以不指定
+user  nginx;
+
+# worker_processes NUMBER | auto
+# 解释：指定nginx启动的worker子进程数量
+# 【*auto：自动设置为物理CPU核心数】
+worker_processes  auto;
+
+# pid DIR
+# 解释：指定运行nginx的master主进程的pid文件存放路径
+pid /opt/nginx/logs/nginx.pid;
+
+# worker_rlimit_nofile NUMBER
+# 解释：指定worker子进程可以打开的最大文件句柄数
+# 【系统最大打开65535，每个子进程打开数乘子进程数，实际也不会超过65535】
+# 这个值需要调大
+worker_rlimit_nofile 20480;
+
+# worker_rlimit_core SIZE
+# 指定worker子进程异常终止后的core文件，用于记录分析问题
+worker_rlimit_core 50M;
+working_directory /opt/nginx/tmp;#【必须对子进程用户赋写权限】
+
+# 解释：将每个worker子进程与CPU物理核心绑定
+# 【master负责调度，worker负责处理请求】
+# 【假设CPU有4个核心，某一时刻worker1获取到了CPU1的工作调度时间片，时间片过后worker1从CPU1上面撤下来，CPU1去处理其他事件，下一时刻可能是CPU2、CPU3的时间片调度到了worker1上面，那么worker1就会在其他CPU上面工作，进程与CPU的调度切换是有损耗的，worker1如果绑定了CPU1，worker1将永远等待CPU1的调度，充分利用CPU缓存】
+# 【【主要作用：将每个worker子进程与特定CPU物理核心绑定，优势在于：避免同一个worker子进程在不同的CPU核心上切换，缓存失效，降低性能；其并不能真正避免进程切换（进程切换是CPU工作特性）】】
+# -- worker_cpu_affinity 00000001 00000010 00000100 00001000 00010000 00100000 01000000 10000000;# 8核心，8个worker
+# -- worker_cpu_affinity 01 10 01 10;# 2核心，4个worker
+worker_cpu_affinity 0001 0010 0100 1000;# 4核心，4个worker
+
+# 解释：指定worker子进程的nice值，以调整运行nginx的优先级，通常设定为“负值”，以优先调用nginx
+# 【Linux默认进程的优先级值是120，值越小越优先；nice设定范围为-20到+19】
+# 【对Linux来说，优先级值则是100到139】
+worker_priority -20;
+
+# 指定worker子进程优雅退出时的超时时间，不管5秒内是否处理完，都强制退出
+worker_shutdown_timeout 5s;
+
+# worker子进程内部使用的计时器精度，调整时间间隔越大，系统调用越少，有利于性能提升；反之，系统调用越多，性能下降
+# 比如某些计时的操作，worker需要去获取内核时间，频繁跟内核打交道会降低性能
+timer_resolution 100ms;
+
+# daemon on | off
+# 设定nginx的运行方式，前台还是后台，前台用户调试，后台用于生产
+daemon on;
+
+# 负载均衡互斥锁文件存放路径
+lock_file logs/nginx.lock;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><h2 id="events段"><a href="#events段" class="header-anchor">#</a> events段</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>events {
+    # Nginx使用何种事件驱动模型,一般不指定这个参数
+    # use epoll;
+    
+    # worker子进程能够处理的最大并发连接数，多核情况最大其实达不到65535，
+    worker_connections  65535;
+    
+    # 是否打开负载均衡互斥锁，默认off（当master接收到请求时，会给每个worker发送消息去唤醒，状态为on时，则会有一个负载均衡锁，master会轮流发给每一个）
+    accept_mutex on;
+    
+    # 新连接分配给worker子进程的超时时间，默认500ms，超时后会转给下一个worker处理请求
+    accept_mutex_delay 100ms;
+    
+    # worker子进程可以接收的新连接个数(这个参数对性能影响不太大)
+    multi_accept on;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="http段"><a href="#http段" class="header-anchor">#</a> http段</h2> <ul><li>server段</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>server {
+ listen 80;
+    server_name www.test.com; 
+    location /picture {
+     root /opt/nginx/html/picture;
+        # 客户端请求 www.test.com/picture/1.jpg；
+        # 对应磁盘映射路径为：/opt/nginx/html/picture/picture/1.jpg
+        
+ }
+ location /picture {
+     alias /opt/nginx/html/picture/;
+        # 客户端请求 www.test.com/picture/1.jpg；
+        # 对应磁盘映射路径为：/opt/nginx/html/picture/1.jpg
+        # 【末尾一定要加/】
+ }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><ul><li>server_name的匹配规则</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 精确匹配，优先级最高，1
+server_name www.test.com;
+
+# 左通配，优先级2
+server_name *.test.com;
+
+# 右通配，优先级3
+server_name www.test.*;
+
+# 正则通配，优先级最低，4
+server_name ~^w\.test\..*$;
+
+# 多个
+server_name www.test.com *.test.com www.test.* ~^w\.test\..*$;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ul><li>location段</li></ul> <table><thead><tr><th style="text-align:left;">匹配规则</th> <th style="text-align:left;">含义</th> <th style="text-align:left;">示例</th> <th style="text-align:left;">优先级（1最高）</th></tr></thead> <tbody><tr><td style="text-align:left;">=</td> <td style="text-align:left;">精确匹配</td> <td style="text-align:left;">location = /pic/</td> <td style="text-align:left;">1</td></tr> <tr><td style="text-align:left;">^~</td> <td style="text-align:left;">匹配到即停止搜索</td> <td style="text-align:left;">location ^~ /pic/</td> <td style="text-align:left;">2</td></tr> <tr><td style="text-align:left;">~</td> <td style="text-align:left;">正则匹配，区分大小写</td> <td style="text-align:left;">location ~ .(Jpg|gif)#</td> <td style="text-align:left;">3</td></tr> <tr><td style="text-align:left;">~*</td> <td style="text-align:left;">正则匹配，不区分大小写</td> <td style="text-align:left;">location ~ .(Jpg|gif)$</td> <td style="text-align:left;">4</td></tr> <tr><td style="text-align:left;">无符号</td> <td style="text-align:left;"></td> <td style="text-align:left;">location /</td> <td style="text-align:left;">5</td></tr> <tr><td style="text-align:left;">@</td> <td style="text-align:left;">内部跳转</td> <td style="text-align:left;">location @errorpage</td> <td style="text-align:left;"></td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code># 测试样例
+location ~ /test/8005/t/$ {
+  return 200 'first regular expressions match!';
+}
+location ~* /test/8005/t/(\w+)$ {
+  return 200 'longest regular expressions match!';
+}
+location ^~ /test/8005/t/ {
+  return 200 'stop regular expressions match!';
+}
+location /test/8005/t/Test2 {
+  return 200 'longest prefix string match!';
+}
+location /test/8005/t {
+  return 200 'prefix string match!';
+}
+location = /test/8005/t {
+  return 200 'exact match!';
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><table><thead><tr><th style="text-align:left;">root与alias的区别</th> <th style="text-align:left;">root</th> <th style="text-align:left;">alias</th></tr></thead> <tbody><tr><td style="text-align:left;">语法</td> <td style="text-align:left;">root path</td> <td style="text-align:left;">alias path</td></tr> <tr><td style="text-align:left;">上下文</td> <td style="text-align:left;">http, server, location, if</td> <td style="text-align:left;">location</td></tr> <tr><td style="text-align:left;">区别</td> <td style="text-align:left;">将定义路径与URI叠加</td> <td style="text-align:left;">只取定义路径，末尾一定要加/</td></tr></tbody></table> <table><thead><tr><th style="text-align:left;">location末尾带与不带/的区别</th> <th style="text-align:left;"></th> <th style="text-align:left;"></th></tr></thead> <tbody><tr><td style="text-align:left;">不带/</td> <td style="text-align:left;">location /test</td> <td style="text-align:left;">尝试把test当成目录，如果找不到则找test文件</td></tr> <tr><td style="text-align:left;">带/</td> <td style="text-align:left;">location /test/</td> <td style="text-align:left;">将test作为目录，如果不存在则直接返回404</td></tr></tbody></table> <div class="language- line-numbers-mode"><pre class="language-text"><code>location /status {
+ # 监控模块
+    stub_status;
+}
+# ------页面结果------
+Active connections: 2 
+server accepts handled requests
+ 16 16 26 
+Reading: 0 Writing: 1 Waiting: 1 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><table><thead><tr><th style="text-align:left;">状态项</th> <th style="text-align:left;">含义</th></tr></thead> <tbody><tr><td style="text-align:left;">Active connections</td> <td style="text-align:left;">当前客户端与Nginx间的TCP连接数，等于下面Reading、Writing、Waiting数量之和</td></tr> <tr><td style="text-align:left;">accepts</td> <td style="text-align:left;">自Nginx启动起，与客户端建立过的连接总数</td></tr> <tr><td style="text-align:left;">handled</td> <td style="text-align:left;">自Nginx启动起，处理过的客户端连接总数。如果没有超出worker_connections配置，该值与accepts相同</td></tr> <tr><td style="text-align:left;">requests</td> <td style="text-align:left;">自Nginx启动起，处理过的客户端请求总数。由于存在HTTP Keep-Alive请求，故requests值会大于handled值</td></tr> <tr><td style="text-align:left;">Reading</td> <td style="text-align:left;">正在读取HTTP请求头部的连接总数</td></tr> <tr><td style="text-align:left;">Writing</td> <td style="text-align:left;">正在向客户端发送响应数据的连接总数</td></tr> <tr><td style="text-align:left;">Waiting</td> <td style="text-align:left;">当前空闲的HTTP Keep-Alive连接总数</td></tr></tbody></table> <table><thead><tr><th style="text-align:left;">内嵌变量</th> <th style="text-align:left;"></th></tr></thead> <tbody><tr><td style="text-align:left;">变量名</td> <td style="text-align:left;">含义</td></tr> <tr><td style="text-align:left;">$connections_active</td> <td style="text-align:left;">同Active connections值</td></tr> <tr><td style="text-align:left;">$connections_reading</td> <td style="text-align:left;">同Reading值</td></tr> <tr><td style="text-align:left;">$connections_writing</td> <td style="text-align:left;">同Writing值</td></tr> <tr><td style="text-align:left;">$connections_waiting</td> <td style="text-align:left;">同waiting值</td></tr></tbody></table> <ul><li><p>rewrite指令&amp;return指令</p></li> <li><ul><li>根据指定正则表达式匹配规则，重写URL</li></ul></li> <li><ul><li>停止处理请求，直接返回响应码或重定向到其他URL</li> <li>执行return指令后，location中后续指令将不会被执行</li></ul></li> <li><ul><li>return</li> <li>rewrite</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>location / {
+    
+    # 上下文：server, location, if
+    # return code [text];
+    # text：响应体内容（如果code是200）
+    # return 200 &quot;return 200 HTTP Code&quot;;
+    # return code URL;
+    # URL：重定向
+    # return 302 /test;
+    # return URL;
+    # URL:直接跟URL的话必须是http/https开头的完整路径
+    # text：响应体内容
+    return http://localhost:8000/test;
+}
+
+location /test {
+    index test.html;
+}
+
+location /search {
+    
+    # rewrite regex replacement [flag]
+    # 上下文：server, location, if
+    # flag: 
+    #     last: 重写后的url发起新请求，再次进入server段，重试location中的匹配
+    #     break: 直接使用重写后的url，不再匹配其他location中的语句
+    #     redirect: 返回302临时重定向
+    #     permanent: 返回301永久重定向
+    rewrite /(.*) https://www.baidu.com permanent;
+}
+
+location /test1 {
+    # 继续匹配location，
+    rewrite /images/(.*) /test2/$1 last;
+    return 200 &quot;return 200 in /test1&quot;;
+}
+
+location /test2 {
+    # 不会再匹配，直接找test3下面的文件
+    rewrite /pics/(.*) /test3/$1 break;
+    return 200 &quot;return 200 in /test2&quot;;
+}
+
+location /test3 {
+    # 请求：/test3/index.html,
+    # 结果：直接返回&quot;return 200 in /test3&quot;，不会再去找index.html文件
+    return 200 &quot;return 200 in /test3&quot;;
+}
+
+location /test4/ {
+    if ( $remote_addr = &quot;192.168.1.1&quot; ) {
+        return 200 &quot;test if OK in URL /test4/&quot;;
+    } 
+}
+
+location /test5 {
+    if ( $uri = &quot;/images/&quot; ) {
+        rewrite (.*) /test2/ break;
+    }
+    # 执行了上面rewrite后，这里的return还会执行，通常不会联合一起写
+    return 200 &quot;test5 if failed\n&quot;;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br></div></div><h2 id="nginx变量分类"><a href="#nginx变量分类" class="header-anchor">#</a> Nginx变量分类</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>1、TCP连接相关变量
+      
+ #客户端地址，例如192.168.1.1
+ remote_addr     
+ 
+ #客户端端口，例如58473
+ remote_port     
+ 
+ #客户端地址的整型格式
+ binary_remote_addr   
+ 
+ #已处理连接，是一个递增的序号
+ connection     
+ 
+ #当前连接上执行的请求数，对于keepalive连接有意义
+ connection_request   
+ 
+ #如果使用proxy_protocol协议，则返回原始用户的地址，否则为空
+ proxy_protocol_addr   
+ 
+ #如果使用proxy_protocol协议，则返回原始用户的端口，否则为空
+ proxy_protocol_port   
+ 
+ #服务器地址，例如192.168.184.240
+ server_addr     
+ 
+ #服务器端口,例如80
+ server_port     
+ 
+ #服务端协议，例如HTTP/1.1
+ server_protocol  
+                             
+                                  
+2、HTTP请求相关变量             
+   
+ #请求包体头部长度
+ conten_length    
+ 
+ #请求包体类型
+ content_type    
+ 
+ #URL中某个参数
+ arg_参数名     
+ 
+ #所有URL参数
+ args      
+ 
+ #URL中有参数，则返回?；否则返回空
+ is_args      
+ 
+ #与args完全相同
+ query_string    
+ 
+ #请求的URL，不包含参数
+ uri       
+ 
+ #请求的URL，包含参数
+ request_uri     
+ 
+ #协议名，http或者https
+ scheme      
+ 
+ #请求的方法，GET、HEAD、POST等
+ request_method    
+ 
+ #所有请求内容的大小，包含请求行，头部，请求体
+ request_length    
+ 
+ #由HTTP Basic Authentication协议传入的用户名
+ remote_user     
+ 
+ #客户端请求主体信息的临时文件名
+ request_body_file   
+ 
+ #包含请求的主要信息，在使用proxy_pass或fastcgi_pass指令的location中比较有意义
+ request_body 
+
+ #先看请求行，再看请求头，最后找server_name
+ host
+
+ #用户浏览器标识
+ http_user_agent
+
+ #从哪些链接过来的请求
+ http_referer
+
+ #经过一层代表服务器，添加对应代理服务器的信息
+ http_via
+
+ #获取用户真实IP
+ http_x_forwarded_for
+
+ #用户cookie
+ http_cookie
+
+
+                                  
+3、Nginx处理请求时相关变量      
+                                  
+ #请求处理到现在所耗费的时间，单位为秒，例如0.03代表30毫秒
+ request_time    
+ 
+ #请求处理完成，则返回OK，否则为空
+ request_completion   
+ 
+ #16进制显示的请求id，随机生成的
+ request_id     
+ 
+ #匹配上请求的server_name值
+ server_name     
+ 
+ #若开启https，则值为on,否则为空
+ https      
+ 
+ #待访问文件的完整路径
+ request_filename   
+ 
+ #由URI和root/alias规则生成的文件夹路径
+ document_root    
+ 
+ #将document_root中的软链接换成真实路径
+ realpath_root    
+ 
+ #返回响应时的速度上限值
+ limit_rate     
+                                  
+4、Nginx返回响应时相关变量      
+   
+ #响应体中真实内容的大小 
+ body_bytes_sent    
+ 
+ #全部响应体大小
+ body_sent     
+ 
+ #HTTP返回状态码
+ status      
+   
+  
+5、系统变量
+
+ #nginx系统版本
+ nginx_version
+
+ #服务器时间
+ time_local
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br></div></div><h2 id="时间空间单位"><a href="#时间空间单位" class="header-anchor">#</a> 时间空间单位</h2> <h3 id="时间单位"><a href="#时间单位" class="header-anchor">#</a> 时间单位</h3> <ul><li>ms：毫秒</li> <li>s：秒</li> <li>m：分钟</li> <li>h：小时</li> <li>d：天</li> <li>w：周</li> <li>M：月</li> <li>y：年</li></ul> <h3 id="空间单位"><a href="#空间单位" class="header-anchor">#</a> 空间单位</h3> <ul><li>k/K：KB</li> <li>m/M：MB</li> <li>g/G：GB</li></ul> <h1 id="http状态码"><a href="#http状态码" class="header-anchor">#</a> HTTP状态码</h1> <table><thead><tr><th style="text-align:left;">分类</th> <th style="text-align:left;">描述</th></tr></thead> <tbody><tr><td style="text-align:left;">1**</td> <td style="text-align:left;">信息，服务器收到请求，需要请求者继续执行操作</td></tr> <tr><td style="text-align:left;">2**</td> <td style="text-align:left;">成功，操作被成功接收并处理</td></tr> <tr><td style="text-align:left;">3**</td> <td style="text-align:left;">重定向，需要进一步的操作以完成请求</td></tr> <tr><td style="text-align:left;">4**</td> <td style="text-align:left;">客户端错误，请求包含语法错误或无法完成请求</td></tr> <tr><td style="text-align:left;">5**</td> <td style="text-align:left;">服务器错误，服务器在处理请求的过程中发生了错误</td></tr></tbody></table> <table><thead><tr><th style="text-align:left;">状态码</th> <th style="text-align:left;">描述</th></tr></thead> <tbody><tr><td style="text-align:left;">100</td> <td style="text-align:left;">继续。客户端应继续其请求</td></tr> <tr><td style="text-align:left;">101</td> <td style="text-align:left;">切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议</td></tr> <tr><td style="text-align:left;"></td> <td style="text-align:left;"></td></tr> <tr><td style="text-align:left;">200</td> <td style="text-align:left;">请求成功。一般用于GET与POST请求</td></tr> <tr><td style="text-align:left;">201</td> <td style="text-align:left;">已创建。成功请求并创建了新的资源</td></tr> <tr><td style="text-align:left;">202</td> <td style="text-align:left;">已接受。已经接受请求，但未处理完成</td></tr> <tr><td style="text-align:left;">203</td> <td style="text-align:left;">非授权信息。请求成功。但返回的meta信息不在原始的服务器，而是一个副本</td></tr> <tr><td style="text-align:left;">204</td> <td style="text-align:left;">无内容。服务器成功处理，但未返回内容。在未更新网页的情况下，可确保浏览器继续显示当前文档</td></tr> <tr><td style="text-align:left;">205</td> <td style="text-align:left;">重置内容。服务器处理成功，用户终端（例如：浏览器）应重置文档视图。可通过此返回码清除浏览器的表单域</td></tr> <tr><td style="text-align:left;">206</td> <td style="text-align:left;">部分内容。服务器成功处理了部分GET请求</td></tr> <tr><td style="text-align:left;"></td> <td style="text-align:left;"></td></tr> <tr><td style="text-align:left;">300</td> <td style="text-align:left;">多种选择。请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端（例如：浏览器）选择</td></tr> <tr><td style="text-align:left;">301</td> <td style="text-align:left;">永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。今后任何新的请求都应使用新的URI代替</td></tr> <tr><td style="text-align:left;">302</td> <td style="text-align:left;">临时移动。与301类似。但资源只是临时被移动。客户端应继续使用原有URI</td></tr> <tr><td style="text-align:left;">303</td> <td style="text-align:left;">查看其它地址。与301类似。使用GET和POST请求查看</td></tr> <tr><td style="text-align:left;">304</td> <td style="text-align:left;">未修改。所请求的资源未修改，服务器返回此状态码时，不会返回任何资源。客户端通常会缓存访问过的资源，通过提供一个头信息指出客户端希望只返回在指定日期之后修改的资源</td></tr> <tr><td style="text-align:left;">305</td> <td style="text-align:left;">使用代理。所请求的资源必须通过代理访问</td></tr> <tr><td style="text-align:left;">306</td> <td style="text-align:left;">已经被废弃的HTTP状态码</td></tr> <tr><td style="text-align:left;">307</td> <td style="text-align:left;">临时重定向。与302类似。使用GET请求重定向</td></tr> <tr><td style="text-align:left;"></td> <td style="text-align:left;"></td></tr> <tr><td style="text-align:left;">400</td> <td style="text-align:left;">客户端请求的语法错误，服务器无法理解</td></tr> <tr><td style="text-align:left;">401</td> <td style="text-align:left;">请求要求用户的身份认证</td></tr> <tr><td style="text-align:left;">402</td> <td style="text-align:left;">保留，将来使用</td></tr> <tr><td style="text-align:left;">403</td> <td style="text-align:left;">服务器理解请求客户端的请求，但是拒绝执行此请求</td></tr> <tr><td style="text-align:left;">404</td> <td style="text-align:left;">服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置&quot;您所请求的资源无法找到&quot;的个性页面</td></tr> <tr><td style="text-align:left;">405</td> <td style="text-align:left;">客户端请求中的方法被禁止</td></tr> <tr><td style="text-align:left;">406</td> <td style="text-align:left;">服务器无法根据客户端请求的内容特性完成请求</td></tr> <tr><td style="text-align:left;">407</td> <td style="text-align:left;">请求要求代理的身份认证，与401类似，但请求者应当使用代理进行授权</td></tr> <tr><td style="text-align:left;">408</td> <td style="text-align:left;">服务器等待客户端发送的请求时间过长，超时</td></tr> <tr><td style="text-align:left;">409</td> <td style="text-align:left;">服务器完成客户端的 PUT 请求时可能返回此代码，服务器处理请求时发生了冲突</td></tr> <tr><td style="text-align:left;">410</td> <td style="text-align:left;">客户端请求的资源已经不存在。410不同于404，如果资源以前有现在被永久删除了可使用410代码，网站设计人员可通过301代码指定资源的新位置</td></tr> <tr><td style="text-align:left;">411</td> <td style="text-align:left;">服务器无法处理客户端发送的不带Content-Length的请求信息</td></tr> <tr><td style="text-align:left;">412</td> <td style="text-align:left;">客户端请求信息的先决条件错误</td></tr> <tr><td style="text-align:left;">413</td> <td style="text-align:left;">由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个Retry-After的响应信息</td></tr> <tr><td style="text-align:left;">414</td> <td style="text-align:left;">请求的URI过长（URI通常为网址），服务器无法处理</td></tr> <tr><td style="text-align:left;">415</td> <td style="text-align:left;">服务器无法处理请求附带的媒体格式</td></tr> <tr><td style="text-align:left;">416</td> <td style="text-align:left;">客户端请求的范围无效</td></tr> <tr><td style="text-align:left;">417</td> <td style="text-align:left;">服务器无法满足Expect的请求头信息</td></tr> <tr><td style="text-align:left;"></td> <td style="text-align:left;"></td></tr> <tr><td style="text-align:left;">500</td> <td style="text-align:left;">服务器内部错误，无法完成请求</td></tr> <tr><td style="text-align:left;">501</td> <td style="text-align:left;">服务器不支持请求的功能，无法完成请求</td></tr> <tr><td style="text-align:left;">502</td> <td style="text-align:left;">作为网关或者代理工作的服务器尝试执行请求时，从远程服务器接收到了一个无效的响应</td></tr> <tr><td style="text-align:left;">503</td> <td style="text-align:left;">由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中</td></tr> <tr><td style="text-align:left;">504</td> <td style="text-align:left;">充当网关或代理的服务器，未及时从远端服务器获取请求</td></tr> <tr><td style="text-align:left;">505</td> <td style="text-align:left;">服务器不支持请求的HTTP协议的版本，无法完成处理</td></tr></tbody></table></div></section> <footer class="page-edit"><div class="edit-link"><a href="https://gitlab.com/mashengpeng/blog/edit/main/docs/nginx.md" target="_blank" rel="noopener noreferrer">Edit</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">1 分钟前</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/linux.html" class="prev">
+          linux
+        </a></span> <span class="next"><a href="/blog/在vue中使用tailwind.html">
+          在vue中使用tailwind
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#what-is-nginx" class="sidebar-link reco-side-what-is-nginx" data-v-b57cc07c>What is Nginx?</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#nginx特点" class="sidebar-link reco-side-nginx特点" data-v-b57cc07c>Nginx特点</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#安装" class="sidebar-link reco-side-安装" data-v-b57cc07c>安装</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#windows安装" class="sidebar-link reco-side-windows安装" data-v-b57cc07c>windows安装</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#linux安装" class="sidebar-link reco-side-linux安装" data-v-b57cc07c>Linux安装</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#使用" class="sidebar-link reco-side-使用" data-v-b57cc07c>使用</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#虚拟主机" class="sidebar-link reco-side-虚拟主机" data-v-b57cc07c>虚拟主机</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#静态站点" class="sidebar-link reco-side-静态站点" data-v-b57cc07c>静态站点</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#反向代理" class="sidebar-link reco-side-反向代理" data-v-b57cc07c>反向代理</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#七层反向代理" class="sidebar-link reco-side-七层反向代理" data-v-b57cc07c>七层反向代理</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#四层反向代理" class="sidebar-link reco-side-四层反向代理" data-v-b57cc07c>四层反向代理</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#负载均衡" class="sidebar-link reco-side-负载均衡" data-v-b57cc07c>负载均衡</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#upstream模块" class="sidebar-link reco-side-upstream模块" data-v-b57cc07c>upstream模块</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#负载均衡算法" class="sidebar-link reco-side-负载均衡算法" data-v-b57cc07c>负载均衡算法</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#「对上游服务器返回异常时的处理」" class="sidebar-link reco-side-「对上游服务器返回异常时的处理」" data-v-b57cc07c>「对上游服务器返回异常时的处理」</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#配置样例" class="sidebar-link reco-side-配置样例" data-v-b57cc07c>配置样例</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#https加密传输" class="sidebar-link reco-side-https加密传输" data-v-b57cc07c>HTTPS加密传输</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#文件服务器" class="sidebar-link reco-side-文件服务器" data-v-b57cc07c>文件服务器</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#限速" class="sidebar-link reco-side-限速" data-v-b57cc07c>限速</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#限流" class="sidebar-link reco-side-限流" data-v-b57cc07c>限流</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#limit-conn" class="sidebar-link reco-side-limit-conn" data-v-b57cc07c>limit_conn</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#limit-req" class="sidebar-link reco-side-limit-req" data-v-b57cc07c>limit_req</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#黑白名单" class="sidebar-link reco-side-黑白名单" data-v-b57cc07c>黑白名单</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#access" class="sidebar-link reco-side-access" data-v-b57cc07c>access</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#规则示例" class="sidebar-link reco-side-规则示例" data-v-b57cc07c>规则示例</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#请求拦截" class="sidebar-link reco-side-请求拦截" data-v-b57cc07c>请求拦截</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#auth-request" class="sidebar-link reco-side-auth-request" data-v-b57cc07c>auth_request</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#全局配置main段" class="sidebar-link reco-side-全局配置main段" data-v-b57cc07c>全局配置main段</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#events段" class="sidebar-link reco-side-events段" data-v-b57cc07c>events段</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#http段" class="sidebar-link reco-side-http段" data-v-b57cc07c>http段</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#nginx变量分类" class="sidebar-link reco-side-nginx变量分类" data-v-b57cc07c>Nginx变量分类</a></li><li class="level-2" data-v-b57cc07c><a href="/blog/nginx.html#时间空间单位" class="sidebar-link reco-side-时间空间单位" data-v-b57cc07c>时间空间单位</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#时间单位" class="sidebar-link reco-side-时间单位" data-v-b57cc07c>时间单位</a></li><li class="level-3" data-v-b57cc07c><a href="/blog/nginx.html#空间单位" class="sidebar-link reco-side-空间单位" data-v-b57cc07c>空间单位</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><canvas id="vuepress-canvas-cursor"></canvas><div></div></div></div>
+    <script src="/blog/assets/js/app.1f3b255b.js" defer></script><script src="/blog/assets/js/3.74002841.js" defer></script><script src="/blog/assets/js/1.74259b1a.js" defer></script><script src="/blog/assets/js/19.c7db822c.js" defer></script>
+  </body>
+</html>
